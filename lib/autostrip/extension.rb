@@ -1,5 +1,7 @@
 module Autostrip
   module Extension
+    extend ActiveSupport::Concern
+
     module ClassMethods
       def autostrip(*attributes)
         attributes.each do |attribute|
