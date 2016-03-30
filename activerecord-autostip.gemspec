@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 Gem::Specification.new do |s|
-  s.name            = 'autostrip'
+  s.name            = 'activerecord-autostrip'
   s.version         = '1.0.0'
   s.authors         = ['Yaroslav Konoplov']
   s.email           = ['yaroslav@inbox.com']

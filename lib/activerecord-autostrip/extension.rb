@@ -7,7 +7,9 @@ module Autostrip
         attributes.each do |attribute|
           before_validation do |model|
             value = model.send(attribute)
-            model.send("#{attribute}=", value.squish.trim) if value.kind_of?(String)
+            if Autostrip.performable?(value)
+              model.send("#{attribute}=", Autostrip.perform(value))
+            end
           end
         end
       end
