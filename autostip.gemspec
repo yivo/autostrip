@@ -1,13 +1,11 @@
 # frozen_string_literal: true
-# encoding: utf-8
-
 Gem::Specification.new do |s|
-  s.name            = 'activerecord-autostrip'
-  s.version         = '1.0.0'
+  s.name            = 'autostrip'
+  s.version         = '1.0.1'
   s.authors         = ['Yaroslav Konoplov']
-  s.email           = ['yaroslav@inbox.com']
-  s.summary         = 'Automatically trim and squish ActiveRecord::Base attributes'
-  s.description     = 'Automatically trim and squish ActiveRecord::Base attributes'
+  s.email           = ['eahome00@gmail.com']
+  s.summary         = 'Automatically strip leading and trailing whitespace'
+  s.description     = 'Automatically strip leading and trailing whitespace'
   s.homepage        = 'http://github.com/yivo/autostrip'
   s.license         = 'MIT'
 
@@ -16,6 +14,5 @@ Gem::Specification.new do |s|
   s.test_files      = `git ls-files -z -- {test,spec,features}/*`.split("\x0")
   s.require_paths   = ['lib']
 
-  s.add_development_dependency 'rake', '~> 10.0'
-  s.add_development_dependency 'test-unit', '~> 3.1.8'
+  s.add_runtime_dependency 'activemodel', '>= 3.0', '< 6.0'
 end
