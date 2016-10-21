@@ -18,3 +18,9 @@ end
 module ActiveModel::Validations::HelperMethods
   include Autostrip::Extension
 end
+
+if defined?(ActiveRecord::Base) && !ActiveRecord::Base.methods.include?(:autostrip)
+  class ActiveRecord::Base
+    extend Autostrip::Extension
+  end
+end

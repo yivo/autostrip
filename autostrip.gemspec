@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 Gem::Specification.new do |s|
   s.name            = 'autostrip'
-  s.version         = '1.0.1'
+  s.version         = '1.0.2'
   s.authors         = ['Yaroslav Konoplov']
   s.email           = ['eahome00@gmail.com']
   s.summary         = 'Automatically strip leading and trailing whitespace'
