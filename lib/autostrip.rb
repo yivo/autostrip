@@ -17,4 +17,5 @@ module Autostrip
   end
 end
 
-ActiveModel::Validations::HelperMethods.include Autostrip::Extension
+ActiveModel.include Autostrip::Extension
+ActiveSupport.on_load(:active_record) { ActiveRecord::Base.include Autostrip::Extension }
