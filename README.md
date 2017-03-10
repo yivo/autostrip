@@ -1,4 +1,4 @@
 ## Gemfile
 ```ruby
-gem 'autostip', github: 'yivo/autostip'
+gem 'autostip', '~> 1.0.3'
 ```

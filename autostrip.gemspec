@@ -1,7 +1,11 @@
+# encoding: UTF-8
 # frozen_string_literal: true
+
+require File.expand_path('../lib/autostrip/version', __FILE__)
+
 Gem::Specification.new do |s|
   s.name            = 'autostrip'
-  s.version         = '1.0.2'
+  s.version         = Autostrip::VERSION
   s.authors         = ['Yaroslav Konoplov']
   s.email           = ['eahome00@gmail.com']
   s.summary         = 'Automatically strip leading and trailing whitespace'
